@@ -10,10 +10,12 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <!-- custom style -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg fixed-top bg-light">
         <div class="container">
           <a class="navbar-brand" href="#"
             ><img src="images/logo.png" alt="" />
@@ -35,13 +37,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Bagpack</a>
+                <a class="nav-link" href="#bags">Bagpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
             </ul>
           </div>
@@ -176,7 +178,7 @@
       </div>
       <!-- categories end -->
       <!-- option start -->
-      <section class="container my-5">
+      <section class="container my-5" id="shoes">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -188,11 +190,13 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Supply 350</h5>
+
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
+                <h5>$120</h5>
               </div>
               <div class="m-3">
                 <div class="btn btn-warning">Buy Now</div>
@@ -208,10 +212,12 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Nike 360</h5>
+
                 <p class="card-text">
                   This card has supporting text below as a natural lead-in to
                   additional content.
                 </p>
+                <h5>$169</h5>
               </div>
               <div class="m-3">
                 <div class="btn btn-warning">Buy Now</div>
@@ -227,11 +233,13 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Red Airmax</h5>
+
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This card has even longer
                   content than the first to show that equal height action.
                 </p>
+                <h5>$222</h5>
               </div>
               <div class="m-3">
                 <div class="btn btn-warning">Buy Now</div>
@@ -242,7 +250,7 @@
       </section>
       <!-- option end -->
       <!-- bags start -->
-      <section class="container my-5">
+      <section class="container my-5" id="bags">
         <h2>Bagpack</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -298,6 +306,37 @@
         </div>
       </section>
       <!-- bags end -->
+      <!-- subscribe start -->
+      <section
+        id="subscribe"
+        style="height: 300px"
+        class="container d-flex justify-content-center align-items-center bg-info"
+      >
+        <div>
+          <h2>LET'S STAY IN TOUCH</h2>
+          <p>Get updates on sales, specials and more</p>
+          <form>
+            <div class="mb-1">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- subscribe end -->
+      <footer>
+        <p class="text-center mt-5">
+          <small
+            >©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small
+          >
+        </p>
+      </footer>
     </main>
 
     <script
